@@ -1,17 +1,37 @@
 import React from "react";
 import Weather from "./Weather";
 
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello</h1>
         <Weather />
       </header>
+
+      <footer className="App-Footer">
+        <p>
+          This project was coded by
+          <a href="https://github.com/rhogarth91" target="_blank">
+            {" "}
+            Rose H{" "}
+          </a>{" "}
+          🌹 and is
+          <a
+            href="https://github.com/rhogarth91/weather-app-react"
+            target="_blank"
+          >
+            {" "}
+            open-sourced on GitHub{" "}
+          </a>
+          and{" "}
+          <a href="https://rh-weather-app-react.netlify.app/" target="_blank">
+            hosted on Netlify
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
