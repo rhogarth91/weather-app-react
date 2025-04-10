@@ -19,12 +19,13 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            "> Rose H{" "}
+            Rose H{" "}
           </a>{" "}
           🌹 and is
           <a
             href="https://github.com/rhogarth91/weather-app-react"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             open-sourced on GitHub{" "}
@@ -35,7 +36,8 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            "> hosted on Netlify
+            {" "}
+            hosted on Netlify">
           </a>
         </p>
       </footer>
