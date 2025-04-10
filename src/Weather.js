@@ -59,7 +59,7 @@ export default function Search() {
             <b>Wind:</b> {weather.wind}km/h
           </li>
           <li>
-            <img src="#" alt={weather.icon} />
+            <img src={weather.icon} alt="weather-icon" />
           </li>
         </ul>
       </div>

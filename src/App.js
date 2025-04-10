@@ -37,7 +37,7 @@ function App() {
             rel="noreferrer"
           >
             {" "}
-            hosted on Netlify">
+            hosted on Netlify
           </a>
         </p>
       </footer>
