@@ -14,9 +14,12 @@ function App() {
       <footer className="App-Footer">
         <p>
           This project was coded by
-          <a href="https://github.com/rhogarth91" target="_blank">
-            {" "}
-            Rose H{" "}
+          <a
+            href="https://github.com/rhogarth91"
+            target="_blank"
+            rel="noreferrer"
+          >
+            "> Rose H{" "}
           </a>{" "}
           🌹 and is
           <a
@@ -27,8 +30,12 @@ function App() {
             open-sourced on GitHub{" "}
           </a>
           and{" "}
-          <a href="https://rh-weather-app-react.netlify.app/" target="_blank">
-            hosted on Netlify
+          <a
+            href="https://rh-weather-app-react.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            "> hosted on Netlify
           </a>
         </p>
       </footer>
