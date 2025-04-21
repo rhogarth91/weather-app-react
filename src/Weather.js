@@ -11,10 +11,11 @@ export default function Search() {
   function showTemperature(response) {
     setInput(true);
     setWeather({
+      city: response.data.name,
       temp: response.data.temperature.current,
-      wind: response.data.wind.speed,
-      humidity: response.data.temperature.humidity,
       desc: response.data.condition.description,
+      humidity: response.data.temperature.humidity,
+      wind: response.data.wind.speed,
       icon: response.data.condition.icon_url,
     });
   }
@@ -58,6 +59,9 @@ export default function Search() {
         <br />
         <ul class="weatherDisplay">
           <li>
+            <b>City:</b> {city}
+          </li>
+          <li>
             <b>Temperature:</b> {Math.round(weather.temp)}°C
           </li>
           <li>
@@ -77,6 +81,6 @@ export default function Search() {
     );
   } else {
     searchResult(defaultCity);
-    return " loading....";
+    return " Loading....";
   }
 }
