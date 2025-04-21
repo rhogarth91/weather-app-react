@@ -13,7 +13,7 @@ function App() {
 
       <footer className="App-Footer">
         <p>
-          This project was coded by
+          This project was coded by{" "}
           <a
             href="https://github.com/rhogarth91"
             target="_blank"
