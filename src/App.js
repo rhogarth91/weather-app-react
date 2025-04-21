@@ -11,7 +11,6 @@ function App() {
           <h1>Weather Application</h1>
           <Weather />
         </header>
-
         <footer className="App-Footer">
           <p>
             This project was coded by{" "}

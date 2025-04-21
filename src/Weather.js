@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+let defaultCity = "London";
+
 export default function Search() {
-  let [city, setCity] = useState("");
+  let [city, setCity] = useState(defaultCity);
   let [input, setInput] = useState(false);
   let [weather, setWeather] = useState({});
 
@@ -19,9 +21,18 @@ export default function Search() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    searchResult();
+  }
+
+  function searchResult() {
     let key = `74a685e33bd3f486faa1o3tac33e021d`;
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}&unit=metric`;
     axios.get(apiUrl).then(showTemperature);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    searchResult();
   }
 
   function updateCity(event) {
@@ -65,6 +76,7 @@ export default function Search() {
       </div>
     );
   } else {
-    return form;
+    searchResult(defaultCity);
+    return " loading....";
   }
 }
