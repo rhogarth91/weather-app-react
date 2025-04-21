@@ -31,11 +31,6 @@ export default function Search() {
     axios.get(apiUrl).then(showTemperature);
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    searchResult();
-  }
-
   function updateCity(event) {
     setCity(event.target.value);
   }
