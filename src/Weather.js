@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+import WeatherIcon from "./WeatherIcon";
+import WeatherForecast from "./WeatherForecast";
+import ReactAnimatedWeather from "react-animated-weather";
 
 let defaultCity = "London";
 
-export default function Search() {
+export default function Search(props) {
   let [city, setCity] = useState(defaultCity);
   let [input, setInput] = useState(false);
   let [weather, setWeather] = useState({});
@@ -69,7 +72,7 @@ export default function Search() {
             <b>Wind:</b> {weather.wind}km/h
           </li>
           <li>
-            <img src={weather.icon} alt="weather-icon" />
+            <WeatherIcon code="01d" size={40} />
           </li>
         </ul>
       </div>
