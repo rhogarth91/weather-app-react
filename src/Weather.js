@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherIcon from "./WeatherIcon";
-import WeatherForecast from "./WeatherForecast";
 import ReactAnimatedWeather from "react-animated-weather";
 
 let defaultCity = "London";
@@ -14,6 +13,7 @@ export default function Search(props) {
   function showTemperature(response) {
     setInput(true);
     setWeather({
+      coordinates: response.data.coord,
       city: response.data.name,
       temp: response.data.temperature.current,
       desc: response.data.condition.description,
@@ -29,8 +29,8 @@ export default function Search(props) {
   }
 
   function searchResult() {
-    let key = `74a685e33bd3f486faa1o3tac33e021d`;
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}&unit=metric`;
+    let apiKey = `74a685e33bd3f486faa1o3tac33e021d`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query={query}&key=${apiKey}`;
     axios.get(apiUrl).then(showTemperature);
   }
 
