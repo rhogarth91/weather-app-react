@@ -1,5 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
+import WeatherForecast from "./WeatherForecast";
 
 import "./App.css";
 
@@ -10,6 +11,7 @@ function App() {
         <header className="App-header">
           <h1>Weather Application</h1>
           <Weather />
+          <WeatherForecast />
         </header>
         <footer className="App-Footer">
           <p>
