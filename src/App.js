@@ -1,8 +1,30 @@
 import React from "react";
 import Weather from "./Weather";
 import WeatherForecast from "./WeatherForecast";
+import ReactAnimatedWeather from "react-animated-weather";
 
 import "./App.css";
+
+let defaults = [
+  {
+    icon: "CLEAR_DAY",
+    color: "goldenrod",
+    size: 100,
+    animate: true,
+  },
+  {
+    icon: "PARTLY_CLOUDY_NIGHT",
+    color: "red",
+    size: 100,
+    animate: true,
+  },
+  {
+    icon: "RAIN",
+    color: "blue",
+    size: 100,
+    animate: true,
+  },
+];
 
 function App() {
   return (
