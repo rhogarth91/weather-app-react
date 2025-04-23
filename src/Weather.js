@@ -5,7 +5,7 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 let defaultCity = "London";
 
-export default function Search(props) {
+export default function Search() {
   let [city, setCity] = useState(defaultCity);
   let [input, setInput] = useState(false);
   let [weather, setWeather] = useState({});
