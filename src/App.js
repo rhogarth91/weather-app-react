@@ -10,6 +10,8 @@ function App() {
         <header className="App-header">
           <h1>Weather Application</h1>
           <Weather />
+          <br />
+
           <WeatherForecast />
         </header>
         <footer className="App-Footer">
