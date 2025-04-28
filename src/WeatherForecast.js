@@ -22,16 +22,16 @@ export default function WeatherForecast(props) {
           </div>
           <div className="WeatherForecast-icon">
             {" "}
-            <WeatherIcon code={forecast[0].condition.icon} size={40} />{" "}
+            <WeatherIcon code={forecast[0].condition.icon} size={60} />{" "}
           </div>
           <div className="WeatherForecast-temp">
-            <span className="WeatrForecast-temp-max">
+            <span className="WeatherForecast-temp-max">
               {" "}
-              {forecast[0].temperature.maximum}{" "}
+              {Math.round(forecast[0].temperature.maximum)}℃{" "}
             </span>
             <span className="WeatherForecast-temp-min">
               {" "}
-              {forecast[0].temperature.maximum}{" "}
+              {Math.round(forecast[0].temperature.minimum)}℃{" "}
             </span>
           </div>
         </div>
