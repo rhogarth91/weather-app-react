@@ -1,8 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
 import WeatherForecast from "./WeatherForecast";
-import ReactAnimatedWeather from "react-animated-weather";
-
 import "./App.css";
 
 function App() {
