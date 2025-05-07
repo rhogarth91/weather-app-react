@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherIcon from "./WeatherIcon";
+import WeatherForecast from "./WeatherForecast";
 
 let defaultCity = "London";
 
@@ -74,6 +75,7 @@ export default function Search() {
             <WeatherIcon code={weather.icon} size={80} />
           </li>
         </ul>
+        <WeatherForecast coordinates={weather.coordinates} />
       </div>
     );
   } else {

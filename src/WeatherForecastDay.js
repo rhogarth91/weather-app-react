@@ -1,13 +1,10 @@
 import React from "react";
 
-export default function WeatherForecastDay() {
+export default function WeatherForecastDay(props) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  return (
-    <div>
-      {days.map(function (days, index) {
-        return <div key={index}>{days}</div>;
-      })}
-    </div>
-  );
+  const dayTime = new Date(props.code * 1000);
+  const day = dayTime.getDay();
+  console.log({ day, dayTime, t: days[day] });
+  return <div>{days[day]}</div>;
 }
