@@ -13,6 +13,10 @@
   color: white;
 }
 
+.Weather {
+  max-width: 900px;
+}
+
 .form {
   font-size: calc(10px + 2vmin);
 }

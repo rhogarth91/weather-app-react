@@ -33,11 +33,11 @@ export default function WeatherForecast(props) {
             <div className="WeatherForecast-temp">
               <span className="WeatherForecast-temp-max">
                 {" "}
-                {Math.round(forecast[1].temperature.maximum)}℃{" "}
+                {Math.round(forecast[1].temperature.maximum)}℃
               </span>
               <span className="WeatherForecast-temp-min">
                 {" "}
-                {Math.round(forecast[1].temperature.minimum)}℃{" "}
+                {Math.round(forecast[1].temperature.minimum)}℃
               </span>
             </div>
           </div>
@@ -52,11 +52,11 @@ export default function WeatherForecast(props) {
             <div className="WeatherForecast-temp">
               <span className="WeatherForecast-temp-max">
                 {" "}
-                {Math.round(forecast[2].temperature.maximum)}℃{" "}
+                {Math.round(forecast[2].temperature.maximum)}℃
               </span>
               <span className="WeatherForecast-temp-min">
                 {" "}
-                {Math.round(forecast[2].temperature.minimum)}℃{" "}
+                {Math.round(forecast[2].temperature.minimum)}℃
               </span>
             </div>
           </div>
@@ -71,11 +71,11 @@ export default function WeatherForecast(props) {
             <div className="WeatherForecast-temp">
               <span className="WeatherForecast-temp-max">
                 {" "}
-                {Math.round(forecast[3].temperature.maximum)}℃{" "}
+                {Math.round(forecast[3].temperature.maximum)}℃
               </span>
               <span className="WeatherForecast-temp-min">
                 {" "}
-                {Math.round(forecast[3].temperature.minimum)}℃{" "}
+                {Math.round(forecast[3].temperature.minimum)}℃
               </span>
             </div>
           </div>
@@ -90,11 +90,11 @@ export default function WeatherForecast(props) {
             <div className="WeatherForecast-temp">
               <span className="WeatherForecast-temp-max">
                 {" "}
-                {Math.round(forecast[4].temperature.maximum)}℃{" "}
+                {Math.round(forecast[4].temperature.maximum)}℃
               </span>
               <span className="WeatherForecast-temp-min">
                 {" "}
-                {Math.round(forecast[4].temperature.minimum)}℃{" "}
+                {Math.round(forecast[4].temperature.minimum)}℃
               </span>
             </div>
           </div>
@@ -109,11 +109,11 @@ export default function WeatherForecast(props) {
             <div className="WeatherForecast-temp">
               <span className="WeatherForecast-temp-max">
                 {" "}
-                {Math.round(forecast[5].temperature.maximum)}℃{" "}
+                {Math.round(forecast[5].temperature.maximum)}℃
               </span>
               <span className="WeatherForecast-temp-min">
                 {" "}
-                {Math.round(forecast[5].temperature.minimum)}℃{" "}
+                {Math.round(forecast[5].temperature.minimum)}℃
               </span>
             </div>
           </div>
