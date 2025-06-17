@@ -71,6 +71,7 @@ export default function Search() {
           <li>
             <b>Wind:</b> {weather.wind}km/h
           </li>
+          <br />
           <li>
             <WeatherIcon code={weather.icon} size={150} />
           </li>
