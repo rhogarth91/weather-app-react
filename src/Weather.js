@@ -72,7 +72,7 @@ export default function Search() {
             <b>Wind:</b> {weather.wind}km/h
           </li>
           <li>
-            <WeatherIcon code={weather.icon} size={80} />
+            <WeatherIcon code={weather.icon} size={150} />
           </li>
         </ul>
         <WeatherForecast coordinates={weather.coordinates} />
